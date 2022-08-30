@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lisa raamat</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<style>
+    body {
+        background-color: whitesmoke;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    nav table, footer, a {
+        background-color: khaki;
+        font-size: 30px;
+        border-radius: 0.5rem;
+        padding: 0.6rem;
+        margin-bottom: 6rem;
+        border-spacing: 0.2rem;
+        width: 100%;
+        text-decoration: none;
+        color: black;
+    }
+    ncav table {
+        font-size: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        border-spacing: 0.2rem;
+    }
+    input[type=text], input[type='submit'], select {
+        width: 18rem;
+        height: 1.8rem;
+        margin-top: 0.1rem;
+        border: 0.5px solid gray;
+        border-radius: 0.4rem;
+        font-size: 18px;
+    }
+    footer {
+        margin-bottom: 0.6rem;
+        width: 80%;
+        position: fixed;
+        bottom: 0;
+    }
+    #but1 {
+        background-color: #ff7f50;
+        width: 10rem;
+        height: 2.5rem;
+        border: 0.5px rgba(255,217,107,0);
+        border-radius: 0.6rem;
+        font-size: 28px;
+        text-align: center;
+        vertical-align: center;
+        float: right;
+    }
+</style>
+<body>
+<nav>
+    <table>
+        <tr>
+            <td> <a href="RaamatList.html">Raamatud</a></td>
+            <td> | </td>
+            <td> <a href="LisaRaamat.html">Lisa oma raamat</a></td>
+            <td> | </td>
+            <td> <a href="AutorList.html">Autorid</a></td>
+            <td> | </td>
+            <td> <a href="LisaAutor.html">Lisa autor</a></td>
+            <td> | </td>
+        </tr>
+    </table>
+</nav>
+<ncav>
+    <form>
+        <table>
+            <tr>
+                <td><label for="pk">Pealkiri:</label></td>
+                <td> <input type="text" placeholder="Kirjuta raamutu pealkirja" id="pk"></td>
+            </tr>
+            <tr>
+                <td><label for="aut1">Autor #1</label> </td>
+                <td>
+                    <select id="aut1">
+                        <option></option>
+                        <option>Blackseeker</option>
+                        <option>Cherry The Countess</option>
+                        <option>Error parents</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="aut2">Autor #2</label> </td>
+                <td>
+                    <select id="aut2">
+                        <option></option>
+                        <option>Blackseeker</option>
+                        <option>Cherry The Countess</option>
+                        <option>Error parents</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Hinne</td>
+                <td>
+                    <label>1<input type="radio" name="hinne">&nbsp</label>
+                    <label>2<input type="radio" name="hinne">&nbsp</label>
+                    <label>3<input type="radio" name="hinne">&nbsp</label>
+                    <label>4<input type="radio" name="hinne">&nbsp</label>
+                    <label>5<input type="radio" name="hinne">&nbsp</label>
+                </td>
+            </tr>
+            <tr>
+
+                <td><label for="fn">Loetud</label></td>
+                <td>
+                    <input type="checkbox" id="fn">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="button" value="Saada" id="but1">
+                </td>
+            </tr>
+        </table>
+    </form>
+</ncav>
+<footer>
+    ICD0007 Näidisrakendus
+</footer>
+</body>
+</html>
